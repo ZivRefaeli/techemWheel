@@ -1,0 +1,117 @@
+/* Created By: Ziv Refaeli */
+
+#qustions_div {
+    position: absolute;
+    width: 50vw;
+    height: 100vh;
+    left: 0;
+    top: 0;
+
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+#file {
+    position: relative;
+    width: 50%;
+    left: calc(25% - 10px);
+    top: 2%;
+
+    background-color: aliceblue;
+    direction: rtl;
+    padding: 10px;
+}
+
+@keyframes disapper {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+#title {
+    position: absolute;
+    width: 96%;
+    margin: 2%;
+    top: 0;
+    left: 0;
+
+    text-align: center;
+    font-family: 'Gisha';
+    font-size: 260%;
+    text-shadow: 1px 1px 6px rgb(111, 135, 243);
+}
+
+#qustions_table {
+    position: absolute;
+    direction: rtl;
+    
+    height: 60%;
+    width: 60%;
+    top: 20%;
+    left: 20%;
+
+    background-color: rgb(249, 255, 165);
+    padding: 20px;
+    border-radius: 20px;
+    border: 2px dashed black;
+    box-shadow: 2px 2px 4px gray;
+
+    visibility: hidden;
+}
+
+#qustions_table tbody {
+    height: 100%;
+    width: 100%;
+}
+
+.answers {
+    height: 30%;    
+    text-align: center;
+    justify-items: center;
+    align-items: center;
+}
+
+.answer {
+    font-size: 150%;
+    background-color: rgb(107, 105, 247);
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+#check_answer {
+    font-size: 130%;
+    padding: 10px;
+    cursor: pointer;
+}
+
+@keyframes show {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+#ansCounter {
+    position: absolute;
+    width: 20%;
+    direction: rtl;
+
+    top: calc(80% + 10px);
+    right: 20%;
+
+    text-align: center;
+    background-color: lightblue;
+    border: 1px dashed black;
+    padding: 5px;
+
+    font-size: 130%;
+    visibility: hidden;
+}

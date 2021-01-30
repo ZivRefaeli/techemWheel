@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<!-- Created By: Ziv Refaeli -->
+<!-- Background took from 'https://coolbackgrounds.io/' -->
+
+<html>
+    <head>
+        <title>גלגל המזל - זיו רפאלי</title>
+        <link rel="stylesheet" href="WheelStyle.css" />
+        <link rel="stylesheet" href="QustionsStyle.css" />
+        <link rel="icon" href="images/wheel.png" />
+    </head>
+    <body>
+        <div id="wheel_div">
+            <h1>גלגל המזל</h1>
+            <img id="wheel" src="images/wheel.png" />
+            <img id="hold" title="הוסיפו את קובץ השאלות" src="images/hold.png" />
+        </div>
+        <div id="qustions_div">
+            <h1 id="title">הוסיפו את קובץ השאלות כדי להתחיל</h1>
+            <table id="qustions_table"> 
+                <tbody>
+                    <tr>
+                        <th colspan="2" id="qustion" style="font-size: 180%">סובב את הגלגל</th>
+                    </tr>
+                    <tr class="answers">
+                        <td class="answer" lang="Ans" id="ans1">הנדסת</td>
+                        <td class="answer" lang="Ans" id="ans2">תוכנה</td>
+                    </tr>
+                    <tr class="answers">
+                        <td class="answer" lang="Ans" id="ans3"><b style="font-size: 170%">ה</b>הבטחה</td>
+                        <td class="answer" lang="Ans" id="ans4">להצלחה</td>
+                    </tr>
+                    <tr>
+                        <th colspan="2">
+                            <button id="check_answer" onclick="checkAnswer()">בדקו את תשובתכם</button>
+                        </th>
+                    </tr>
+                </tbody>
+            </table>
+            <div id="ansCounter">
+                תשובות נכונות: <b id="counter">0/0</b>
+            </div>
+            <input type="file" id="file" />
+        </div>
+        <div id="creator">נוצר על ידי: זיו רפאלי</div>
+        <script src="WheelScript.js"></script>
+        <script src="QustionsScript.js"></script>
+    </body>
+</html>
